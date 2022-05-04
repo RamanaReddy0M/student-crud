@@ -1,0 +1,2 @@
+INSERT INTO students VALUES (1, 'Daemon Savtore', '1997-03-14', 'M', 'daemon@gamil.com','2022-05-02 23:30:00', '2022-05-03 07:30:00'),
+ 							(2, 'Bonnie Bennet', '1998-04-03', 'M', 'bonnie@gamil.com','2022-05-02 23:30:00', '2022-05-03 07:30:00');

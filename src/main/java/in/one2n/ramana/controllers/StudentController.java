@@ -33,8 +33,8 @@ public class StudentController {
     @GetMapping("/get/{id}")
     public ResponseEntity<String> getStudentById(@PathVariable Long id){
         Optional<Student> student = studentService.getStudentById(id);
-        return student.map(value -> new ResponseEntity<>(value.toString(), HttpStatus.OK))
-                .orElseGet(() -> new ResponseEntity<>("No student found with id: " + id, HttpStatus.BAD_REQUEST));
+        return student.map(value -> new ResponseEntity<>(HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.BAD_REQUEST));
     }
 
 
